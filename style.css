@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0f17;
+}
+
+main {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    height: 66vh;
+}
+
+main h1 {
+    color: #39989f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 5vmin;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6vmin;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+    font-size: 8vmin;
+    color: #3b3f45;
+    background-color: #ffffcf;
+    outline: none;
+}
+
+.resetGame-btn {
+    background-color: #830505f0;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.2rem;
+    margin-top: 0;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.newGame-btn {
+    background-color: #000291e9;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.2rem;
+    margin-top: 0;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.game-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.winner-div {
+    background-color: #d1e7dd;
+    border: 1px solid #1d3622df;
+    color: 1d3622;
+    font-size: 1.25rem;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-inner-div {
+    border: 2px solid #1d3622d7;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.winner-div p {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .newGame-btn,
+    .resetGame-btn {
+        font-size: 1rem;
+    }
+
+    .game-btn {
+        flex-direction: column;
+    }
+
+    .container {
+        height: 70vmin;
+    }
+
+    .winner-div {
+        font-size: 1rem;
+    }
+}
